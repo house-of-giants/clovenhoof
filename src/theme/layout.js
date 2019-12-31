@@ -2,6 +2,7 @@ import React from 'react'
 
 import { createGlobalStyle } from 'styled-components'
 import globalStyles from '../styles/styles'
+import DocStyles from '../styles/base'
 
 const GlobalStyle = createGlobalStyle`
   ${globalStyles}

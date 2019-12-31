@@ -1,9 +1,11 @@
-export const black = '#000'
-export const white = '#fff'
+export const black = '#171717'
+export const white = '#e5e5e5'
+export const red = '#d23440'
 
 export const colors = {
-  black,
-  white
+  primary: black,
+  secondary: white,
+  highlight: red
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */

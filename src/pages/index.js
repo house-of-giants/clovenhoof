@@ -6,6 +6,8 @@ import { StyledContainer } from '../styles/global/layout'
 
 export default () => (
   <Layout>
-    <StyledContainer>Hello world!</StyledContainer>
+    <StyledContainer>
+      <h1>Clovenhoof Tattoo</h1>
+    </StyledContainer>
   </Layout>
 )
