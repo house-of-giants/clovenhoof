@@ -34,19 +34,16 @@ const StyledGrid = styled.div`
   }
 `
 
-export default ({data}) => {
-  console.log(data.allInstaNode.edges);
-  return (
-    <Layout>
-      <StyledContainer>
-        <h1>Clovenhoof Tattoo</h1>
-        <StyledGrid>
-          {data.allInstaNode.edges.map( instaObj => <a target="_blank" rel="nofollow noopener" href={`https://www.instagram.com/p/${instaObj.node.id}`}><img src={instaObj.node.original} /></a>  )}
-        </StyledGrid>
-      </StyledContainer>
-    </Layout>
-  )
-}
+export default ({data}) => (
+  <Layout>
+    <StyledContainer>
+      <h1>Clovenhoof Tattoo</h1>
+      <StyledGrid>
+        {data.allInstaNode.edges.map( instaObj => <a target="_blank" rel="nofollow noopener" href={`https://www.instagram.com/p/${instaObj.node.id}`}><img src={instaObj.node.original} /></a>  )}
+      </StyledGrid>
+    </StyledContainer>
+  </Layout>
+)
 
 export const query = graphql`
   query InstaQuery {
