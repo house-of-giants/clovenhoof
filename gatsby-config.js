@@ -13,5 +13,11 @@ module.exports = {
         pure: true,
       },
     },
+    {
+	    resolve: `gatsby-source-instagram`,
+	    options: {
+	      username: `clovenhoof_tattoo`,
+	    },
+	  },
   ],
 }
