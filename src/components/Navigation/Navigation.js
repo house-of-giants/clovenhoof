@@ -41,7 +41,6 @@ const StyledNav = styled.nav`
 
 
 const Navigation = () => {
-	console.log(`https://graph.facebook.com/v3.2/17841400777840539?fields=biography&access_token=${process.env.INSTA_ACCESS_TOKEN}`)
 	return (
 		<StyledNav>
 			<ul>

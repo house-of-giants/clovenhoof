@@ -59,7 +59,7 @@ const StyledGrid = styled.div`
 const Feed = () => {
   const [ loading, setLoading ] = useState(true)
   const [ posts, setPosts ] = useState([])
-  const [ query, setQuery ] = useState(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink&access_token=${process.env.INSTA_ACCESS_TOKEN}&limit=12`)
+  const [ query, setQuery ] = useState(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink&access_token=${process.env.GATSBY_INSTA_ACCESS_TOKEN}&limit=12`)
   const [ nextPosts, setNextPosts ] = useState(null)
   const [ prevPosts, setPrevPosts ] = useState(null)
 
