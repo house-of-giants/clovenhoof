@@ -14,10 +14,7 @@ module.exports = {
       },
     },
     {
-	    resolve: `gatsby-source-instagram`,
-	    options: {
-	      username: `clovenhoof_tattoo`,
-	    },
-	  },
+      resolve: `gatsby-plugin-react-helmet`,
+    }
   ],
 }

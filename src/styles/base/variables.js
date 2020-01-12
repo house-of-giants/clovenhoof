@@ -8,20 +8,27 @@ export const colors = {
   highlight: red
 }
 
+export const fonts = {
+  display: 'h74_arrakisregular, sans-serif', 
+  body: 'Lato, sans-serif'
+}
+
 export const bpTiny = 'min-width: 25em' /* 400px */
 export const bpSmall = 'min-width: 40.625em' /* 650px */
 export const bpMedium = 'min-width: 53.125em' /* 850px */
 export const bpLarge = 'min-width: 62.5em' /* 1000px */
+export const bpXLarge = 'min-width: 90em' /* 1000px */
 
 
 export const mq = {
   bpTiny,
   bpSmall,
   bpMedium,
-  bpLarge
+  bpLarge,
+  bpXLarge
 }
 
-export const containerWidth = '85.333em' /* 1024px */
+export const containerWidth = '95em' /* 1520px */
 
 export const container = {
   width: containerWidth,
