@@ -49,11 +49,11 @@ const StyledFeed = styled.div`
 const StyledGrid = styled.div`
 	display: grid;
 	grid-gap: 1rem;
-	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 	margin-bottom: 1.875rem;
 
 	@media(${mq.bpMedium}) {
-		grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+		grid-template-columns: repeat( 3, 1fr );
 	}
 
 	@media(${mq.bpXLarge}) {
