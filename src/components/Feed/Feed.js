@@ -143,7 +143,7 @@ const Feed = () => {
 					console.log(err)
 				})
 			fetchPosts()
-	}, [query])
+	}, [query, nextPosts, selected])
 
 	useEffect(() => {
 		const getSelected = () => {
