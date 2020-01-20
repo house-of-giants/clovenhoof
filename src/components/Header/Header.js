@@ -7,28 +7,36 @@ import Navigation from '../Navigation/Navigation'
 import { colors, mq } from '../../styles/base/variables'
 
 const StyledHeader = styled.div`
-  padding: 0;
+	padding: 0;
+	position: relative;
+	z-index: 2;
 
-  @media (${mq.bpLarge}) {
-    padding: 3.75rem 0;
-  }
+	@media (${mq.bpLarge}) {
+		padding: 3.75rem 0;
+	}
 
-  & nav {
-    border-bottom: 1px solid ${colors.secondary};
-  }
+	& nav {
+		border-bottom: 1px solid ${colors.secondary};
+		
+		@media (${mq.bpLarge}) {
+			width: 40vw;
+		}
+	}
+
+	& svg {
+		margin: 0 auto;
+		max-width: 300px;
+	}
 `
 
 const Header = () => (
-  <StyledHeader>
-    <Helmet>
-      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-    </Helmet>
-    <Logo />
-    <Navigation />
-    <p>𝕯𝖊𝖓𝖛𝖊𝖗 𝖙𝖆𝖙𝖙𝖔𝖔𝖎𝖘𝖙</p>
-    <p>𝕰𝖒𝖆𝖎𝖑 𝖙𝖔 𝖘𝖈𝖍𝖊𝖉𝖚𝖑𝖊</p>
-    <p><a href="https://www.instagram.com/eodtattoocolfax/">@eodtattoocolfax</a></p>
-  </StyledHeader>
+	<StyledHeader>
+		<Helmet>
+			<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+		</Helmet>
+		<Logo />
+		<Navigation />
+	</StyledHeader>
 )
 
 export default Header
