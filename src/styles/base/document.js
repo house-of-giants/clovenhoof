@@ -21,11 +21,17 @@ export const DocStyles = css`
   }
 
   & h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family ${fonts.display};
     letter-spacing: 10px;
     padding: 1.875rem 0;
-    text-align: center;
+  }
+
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    font-weight: 900;
   }
 
   .screen-reader-text {
@@ -37,5 +43,9 @@ export const DocStyles = css`
     overflow: hidden;
     padding: 0;
     position: absolute;
+  }
+
+  img {
+    max-width: 100%;
   }
 `

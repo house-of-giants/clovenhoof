@@ -32,7 +32,7 @@ const StyledHeader = styled.div`
 const Header = () => (
 	<StyledHeader>
 		<Helmet>
-			<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet" />
 		</Helmet>
 		<Logo />
 		<Navigation />

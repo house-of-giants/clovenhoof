@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import axios from 'axios'
 
 import FeedNav from './FeedNav'
+import Spinner from '../Spinner/Spinner'
 
 import { mq } from '../../styles/base/variables'
 
@@ -137,8 +138,8 @@ const Feed = () => {
 							setSelected(data ? data[0] : null)
 						}
 					}
+					setLoading(false)
 				})
-				.then( setTimeout( () => setLoading(false), 300 ) )
 				.catch(err => {
 					console.log(err)
 				})
@@ -157,17 +158,14 @@ const Feed = () => {
 			<div className="feed-wrapper">
 				<FeedNav setQuery={setQuery} prevPosts={prevPosts} nextPosts={nextPosts} />
 				{loading === true &&
-					<p>Loading...</p>
+					<Spinner />
 				}
 				<StyledGrid>
-					{posts.map( (post, index) => ( <button onClick={() => setSelected(post)} style={{animationDelay: index * 100 + 'ms'}}><img src={post.media_url} alt={post.caption} /></button> ) )}
+					{posts.map( (post, index) => ( <button key={post.id} onClick={() => setSelected(post)} style={{animationDelay: index * 100 + 'ms'}}><img src={post.media_url} alt={post.caption} /></button> ) )}
 				</StyledGrid>
 				<FeedNav setQuery={setQuery} prevPosts={prevPosts} nextPosts={nextPosts} />
 			</div>
 			<div className="feed-viewer">
-				{loading === true &&
-					<p>Loading...</p>
-				}
 				{selected &&
 					<a key={selected.id} target="_blank" rel="noopener noreferrer" href={selected.permalink}>
 						<img src={selected.media_url} alt={selected.caption} />

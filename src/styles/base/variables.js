@@ -10,7 +10,7 @@ export const colors = {
 
 export const fonts = {
   display: 'h74_arrakisregular, sans-serif', 
-  body: 'Lato, sans-serif'
+  body: 'Montserrat, sans-serif',
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */
