@@ -3,17 +3,21 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import { colors, fonts } from '../../styles/base/variables'
+import Sulfur from '../Logo/Sulfur'
 
 const StyledNav = styled.nav`
 	display: flex;
-	font-size: 2rem;
-	justify-content: center;
+	font-size: 1rem;
+	margin-bottom:
 	padding: 1.875rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 
 	ul {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
 		line-height: 1;
 		list-style: none;
 		margin: 0;
@@ -22,8 +26,9 @@ const StyledNav = styled.nav`
 	}
 
 	li {
+		box-sizing: border-box;
 		display: inline-flex;
-		padding: .875rem;
+		padding: .875rem 0;
 	}
 
 	a {
@@ -36,6 +41,11 @@ const StyledNav = styled.nav`
 			text-decoration: none;
 		}
 	}
+
+	svg {
+		transform: translateX(5px);
+		width: 22px;
+	}
 `
 
 
@@ -44,6 +54,7 @@ const Navigation = () => {
 		<StyledNav>
 			<ul>
 				<li><Link to='/about'>About</Link></li>
+				<li><Link to="/"><Sulfur fill={colors.highlight} /></Link></li>
 				<li><Link to='/contact'>Contact</Link></li>
 			</ul>
 		</StyledNav>

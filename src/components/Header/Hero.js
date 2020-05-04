@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Header from './Header'
-
 const StyledHero = styled.div`
 	align-items: center;
 	display: flex;
@@ -25,6 +23,7 @@ const StyledHero = styled.div`
 	& img {
 		height: 100%;
 		left: 0;
+		max-width: none;
 		object-fit: cover;
 		object-position: 10% 19%;
 		position: absolute;
@@ -32,15 +31,15 @@ const StyledHero = styled.div`
 		width: 100%
 	}
 
-	& svg {
+	& h1 {
 		position: relative;
 		z-index: 2;
 	}
 `
 
-const Hero = () => (
+const Hero = ({ title }) => (
 	<StyledHero>
-		<Header />
+		<h1>{title}</h1>
 		<img src="/images/kevin-headshot.jpg" alt="" />
 	</StyledHero>
 )

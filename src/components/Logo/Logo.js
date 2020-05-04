@@ -10,7 +10,7 @@ const StyledLogo = styled.div`
 
 	& svg {
 		display: block;
-		fill: ${colors.secondary};
+		fill: #484848;
 		max-width: 600px;
 		transition: fill 300ms ease;
 		width: 100%;

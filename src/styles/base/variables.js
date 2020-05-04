@@ -1,6 +1,6 @@
-export const black = '#171717'
+export const black = '#010101'
 export const white = '#e5e5e5'
-export const red = '#d23440'
+export const red = '#de093a'
 
 export const colors = {
   primary: black,
@@ -9,8 +9,8 @@ export const colors = {
 }
 
 export const fonts = {
-  display: 'h74_arrakisregular, sans-serif', 
-  body: 'Montserrat, sans-serif',
+  display: 'UnifrakturMaguntia, sans-serif',
+  body: 'Chivo, sans-serif',
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */

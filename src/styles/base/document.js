@@ -4,7 +4,6 @@ import { colors, fonts } from './variables'
 export const DocStyles = css`
   body {
     background: ${ colors.primary };
-    background: linear-gradient(to top, #000000, #1a1a1a);
     color: ${ colors.secondary };
     font-family: ${fonts.body};
     margin: 0;
@@ -20,17 +19,21 @@ export const DocStyles = css`
     }
   }
 
-  & h1 {
-    font-size: 4rem;
+  h1,
+  .h1 {
+    color: ${colors.secondary};
+    font-size: calc(1rem + 9vw);
     font-family ${fonts.display};
     letter-spacing: 10px;
+    margin: 1.25rem;
     padding: 1.875rem 0;
+    text-align: center;
   }
 
-  & h2,
-  & h3,
-  & h4,
-  & h5 {
+  h2,
+  h3,
+  h4,
+  h5 {
     font-weight: 900;
   }
 
