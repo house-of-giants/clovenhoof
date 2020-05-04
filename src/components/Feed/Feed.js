@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 // import axios from 'axios'
 
-import FeedNav from './FeedNav'
+// import FeedNav from './FeedNav'
 // import Spinner from '../Spinner/Spinner'
 
 import { mq, colors, fonts } from '../../styles/base/variables'

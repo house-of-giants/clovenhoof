@@ -1,10 +1,9 @@
 import { css } from 'styled-components'
 import { styledNormalize } from 'styled-normalize'
-import { PrefersReducedMotion, DocStyles, Fonts } from './base'
+import { PrefersReducedMotion, DocStyles } from './base'
 
 const globalStyles = css`
   ${styledNormalize}
-  ${Fonts}
   ${PrefersReducedMotion}
   ${DocStyles}
 `
