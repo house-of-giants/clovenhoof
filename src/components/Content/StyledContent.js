@@ -8,7 +8,10 @@ const StyledContent = styled.main`
 
 	& .content {
 		display: grid;
-		grid-template-columns: repeat(${props => props.grid}, 1fr);
+
+		@media( ${mq.bpLarge} ) {
+			grid-template-columns: repeat(${props => props.grid}, 1fr);
+		}
 	}
 
 	& .alignleft {
@@ -24,6 +27,10 @@ const StyledContent = styled.main`
 
 	& img {
 		max-width: 400px;
+	}
+
+	& iframe {
+		max-width: 100%;
 	}
 `
 

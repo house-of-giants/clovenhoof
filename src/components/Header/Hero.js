@@ -1,13 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mq } from '../../styles/base/variables'
 
 const StyledHero = styled.div`
 	align-items: center;
 	display: flex;
-	height: 60vh;
+	height: 30vh;
 	justify-content: center;
-	min-height: 500px;
 	position: relative;
+
+	@media(${mq.bpLarge}) {
+		height: 60vh;
+		min-height: 500px;
+	}
 
 	&::before {
 		background-color: rgba(0, 0, 0, 0.7);

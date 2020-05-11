@@ -2,11 +2,14 @@ import React from 'react'
 
 import Layout from '../theme/layout'
 import StyledContent from '../components/Content/StyledContent'
+import Hero from '../components/Header/Hero'
+import Separator from '../components/Content/Separator'
 
 export default () => (
 	<Layout>
+		<Hero title="Contact" />
+		<Separator />
 		<StyledContent grid="2">
-			<h1>Contact</h1>
 			<div className="content">
 				<div className="wrap">
 					<h2>Email to schedule</h2>
