@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Clovenhoof Tattoo",
+    titleTemplate: "%s | Clovenhoof Tattoo",
+    description: "Kevin Seawell is a tattoo artist based out of Denver Colorado.",
+    image: "/ct-social.jpg",
+    siteUrl: 'https://clovenhoof.tattoo',
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
@@ -15,6 +22,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-react-helmet`,
-    }
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `clovenhoof_tattoo`,
+      },
+    },
   ],
 }

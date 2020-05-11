@@ -4,9 +4,11 @@ import Layout from '../theme/layout'
 import StyledContent from '../components/Content/StyledContent'
 import Separator from '../components/Content/Separator'
 import Hero from '../components/Header/Hero'
+import SEO from '../components/SEO/SEO'
 
 export default () => (
 	<Layout>
+		<SEO title="About" />
 		<StyledContent>
 			<Hero title="About" />
 			<Separator />
