@@ -4,7 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import globalStyles from '../styles/styles'
 
 import { containerWidth } from '../styles/base/variables'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Navigation from '../components/Navigation/Navigation'
 
 const StyledMain = styled.main`
