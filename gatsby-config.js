@@ -15,6 +15,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-react-helmet`,
-    }
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `clovenhoof_tattoo`,
+      },
+    },
   ],
 }
