@@ -1,0 +1,73 @@
+:root {
+  --primary: #010101;
+  --secondary: #e5e5e5;
+  --highlight: #de093a;
+  --ff-display: UnifrakturMaguntia, sans-serif;
+  --ff-heading: Chonburi, serif;
+  --ff-body: "Nanum Gothic", sans-serif;
+}
+
+html,
+body {
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: var(--ff-body);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+h4 {
+  font-family: var(--ff-heading);
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.email {
+  word-break: break-all;
+}
+
+h1,
+.h1 {
+  color: var(--secondary);
+  font-size: calc(1rem + 9vw);
+  font-family: var(--ff-display);
+  letter-spacing: 10px;
+  margin: 1.25rem;
+  padding: 1.875rem 0;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+}

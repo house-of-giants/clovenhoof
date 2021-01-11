@@ -1,38 +1,20 @@
 {
-  "name": "house-of-giants",
-  "private": true,
-  "description": "The creative portfolio for House of Giants",
+  "name": "clovenhoof",
   "version": "0.1.0",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.21.22",
-    "gatsby-plugin-react-helmet": "^3.3.1",
-    "gatsby-plugin-styled-components": "^3.3.1",
-    "gatsby-source-filesystem": "^2.3.1",
-    "gatsby-source-instagram": "^0.7.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "styled-components": "^5.1.0",
-    "styled-normalize": "^8.0.7"
+    "instagram-web-api": "^2.2.2",
+    "next": "10.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/house-of-giants/house-of-giants"
-  },
-  "bugs": {
-    "url": "https://github.com/house-of-giants/house-of-giants/issues"
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }
