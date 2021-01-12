@@ -10,8 +10,8 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Clovenhoof Tattoo</title>
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main className={styles.main}>
