@@ -21,6 +21,7 @@ const StyledSeparator = styled.div`
   & svg {
     background-color: ${colors.primary};
     padding: 1rem;
+    width: 22px;
   }
 `
 
