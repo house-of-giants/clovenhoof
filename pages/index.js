@@ -65,6 +65,5 @@ export async function getStaticProps() {
     props: {
       posts: images,
     },
-    revalidate: 1,
   }
 }
