@@ -37,14 +37,13 @@ export default function Home({ posts }) {
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`https://graph.instagram.com/me/media?fields=id,media_url,permalink,media_type&limit=24&access_token=${process.env.INSTA_TOKEN}`)
   const data = await res.json()
 
   return {
     props: {
       posts: data,
-      revalidate: 1
     },
   }
 }
