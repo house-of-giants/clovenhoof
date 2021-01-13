@@ -15,7 +15,7 @@ const Feed = ({ posts }) => (
 						<div className="image">
 							<a href={post.permalink} target="_blank" rel="noopener noreferrer">
 								{post.media_type === 'VIDEO' ? (
-									<video>
+									<video controls={true}>
 										<source src={post.media_url} />
 									</video>
 								) : (
