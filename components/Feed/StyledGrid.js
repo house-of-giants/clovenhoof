@@ -92,7 +92,8 @@ const StyledGrid = styled.div`
 		transform: translateX(-50%) translateY(-100%);
 	}
 
-	& img {
+	& img,
+	& video {
 		bottom: 0;
 		box-sizing: border-box;
 		height: 100%;

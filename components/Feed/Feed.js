@@ -9,12 +9,18 @@ const Feed = ({ posts }) => (
 	<StyledFeed>
 		<div className="feed-wrapper">
 			<StyledGrid>
-				{posts.map(({ node }, i) => (
-					<div key={node.shortcode} className="post" style={{animationDelay: i * 100 + 'ms'}}>
+				{posts.map((post, i) => (
+					<div key={post.id} className="post" style={{animationDelay: i * 100 + 'ms'}}>
 						<h3 className="label">{romanize(i)}</h3>
 						<div className="image">
-							<a href={`https://instagram.com/p/${node.shortcode}`} target="_blank" rel="noopener noreferrer">
-								<img src={node.display_resources[0].src} />
+							<a href={post.permalink} target="_blank" rel="noopener noreferrer">
+								{post.media_type === 'VIDEO' ? (
+									<video>
+										<source src={post.media_url} />
+									</video>
+								) : (
+									<img src={post.media_url} />
+								)}
 							</a>
 						</div>
 						<div className="icon">

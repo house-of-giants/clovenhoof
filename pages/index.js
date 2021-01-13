@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Instagram from 'instagram-web-api'
 import Feed from '@/components/Feed/Feed'
 import Logo from '@/components/Logo'
-import Separator from '@/components/Content/Separator'
 import StyledContent from '@/components/Content/StyledContent'
 
 export default function Home({ posts }) {
@@ -16,8 +14,7 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         <Logo />
-        <Separator />
-        <Feed posts={posts} />
+        <Feed posts={posts.data} />
       </main>
 
       <StyledContent id="contact">
@@ -41,29 +38,13 @@ export default function Home({ posts }) {
 
 
 export async function getStaticProps() {
-  const client = new Instagram({
-    username: process.env.INSTA_USER,
-    password: process.env.INSTA_PASS,
-  })
-
-  let images = []
-
-  try {
-    await client.login()
-    const response = await client.getPhotosByUsername({
-      username: process.env.INSTA_USER,
-    })
-
-    if (response["user"]["edge_owner_to_timeline_media"]["count"] > 0) {
-      images = response["user"]["edge_owner_to_timeline_media"]["edges"]
-    }
-  } catch (err) {
-    console.log("Error logging in to Instagram")
-  }
+  const res = await fetch(`https://graph.instagram.com/me/media?fields=id,media_url,permalink,media_type&limit=24&access_token=${process.env.INSTA_TOKEN}`)
+  const data = await res.json()
 
   return {
     props: {
-      posts: images,
+      posts: data,
+      revalidate: 1
     },
   }
 }

@@ -1,4 +1,3 @@
-import Separator from '@/components/Content/Separator'
 import StyledContent from '@/components/Content/StyledContent'
 import Hero from '@/components/Header/Hero'
 import React from 'react'
@@ -6,7 +5,6 @@ import React from 'react'
 const Contact = () => (
 	<>
 		<Hero title="Contact" />
-		<Separator />
 		<StyledContent>
 			<div className="content">
 				<div className="wrap">

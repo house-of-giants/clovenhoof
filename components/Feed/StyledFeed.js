@@ -9,7 +9,8 @@ const StyledFeed = styled.div`
 	& .feed-viewer {
 		position: relative;
 
-		& img {
+		& img,
+		& video {
 			animation: fade-over 300ms ease;
 			animation-fill-mode: forwards;
 			height: 100%;
