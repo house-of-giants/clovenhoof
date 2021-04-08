@@ -13,10 +13,10 @@ const Contact = () => (
 				</div>
 
 				<div className="wrap">
-					<h2><a href="http://eodtattoo.com/" target="_blank" rel="noopener noreferrer">End of Days Tattoo</a></h2>
-					<p><strong>Address:</strong> 2024 E Colfax Ave, Denver, CO 80206</p>
-					<p><strong>Phone:</strong> (303) 333-4880</p>
-					<iframe title="Google map location for EOD Tattoo" style={{width: '100%'}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12271.962756843563!2d-104.962645!3d39.73986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1e7a616ab4bdb6e!2sEnd%20Of%20Days%20(EOD)%20Tattoo!5e0!3m2!1sen!2sus!4v1580315000093!5m2!1sen!2sus" height="450" frameBorder="0" allowFullScreen=""></iframe>
+					<h2><a href="https://www.facebook.com/bristoltattooco/" target="_blank" rel="noopener noreferrer">The Bristol Tattoo Company</a></h2>
+					<p><strong>Address:</strong> 504 State St, Bristol, TN 37620</p>
+					<p><strong>Phone:</strong> (423) 573-7804</p>
+					<iframe title="Google map location for The Bristol Tattoo Company" style={{width: '100%'}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12813.242959827836!2d-82.1820997!3d36.5948244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4124003a7b4a0572!2sThe%20Bristol%20Tattoo%20Company!5e0!3m2!1sen!2sus!4v1617893203363!5m2!1sen!2sus" height="450" frameBorder="0" allowFullScreen=""></iframe>
 				</div>
 			</div>
 		</StyledContent>
